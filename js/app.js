@@ -9,9 +9,6 @@ let list_item = document.getElementsByClassName("to_do")
 
 let element_prioritize;
 //Setting up the fucntions first
-
-
-
 window.onload = function() {
   document.getElementById("table").onmouseover = startup;
 }
@@ -45,9 +42,11 @@ const create_item = function() {
 
       row[index].append(elements[index].htmlPriorityButton);
 
+
       elements[index].htmlText = document.createElement("td");
       elements[index].htmlText.innerHTML = elements[index].task;
       elements[index].htmlText.setAttribute("class", "to_do");
+
 
       row[index].append(elements[index].htmlText);
 
