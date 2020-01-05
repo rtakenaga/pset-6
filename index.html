@@ -1,34 +1,26 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <script type="text/javascript" src="js/app.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
+	<head>
+		<title>To Do List</title>
+		<link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+	</head>
+	<body>
 
-<div id="myDIV" class="header">
-  <h2 style="margin:20px">My To Do List</h2>
-  <input type="text" id="myInput" placeholder="What do you need to get done..."><br>
+			<h1 class="title">#ToDo</h1>
+			<hr>
+			<h1 class="todo_header">My List</h1>
 
-  <span onclick="newElement()" class="addBtn">Add</span>
-  <input id="taskPriority" placeholder="Place task priority (1-10)"><br>
-</div>
+			<div class="user_input">
+				<input type="text" class="input" id="input_item">
+				<button class="button_add" id="add_button">Add</button>
+			</div>
 
-<ul id="myUL">
+			<table id="table"></table>
 
-</ul>
-
-<script>
-//Making sure the check works when the to do is done
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-</script>
-
-</body>
+			<script type="text/javascript" src="js/app.js"></script>
+	</body>
 </html>
