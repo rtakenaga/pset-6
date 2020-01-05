@@ -119,7 +119,7 @@ const prioritize_item = function() {
 
     priority_button[z].onclick = function () {
       if (elements[z].priority == false) {
-
+        //This changes the color of the background of the button
         element_prioritize = row[z]
         prioritize = true;
         priority_button[z].style.backgroundColor = "yellow";
