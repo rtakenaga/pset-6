@@ -1,6 +1,4 @@
 //Setting up the variables
-
-
 let elements = []
 var add = document.getElementById("add_button");
 var row = document.getElementsByClassName("row");
@@ -132,7 +130,7 @@ const prioritize_item = function() {
         prioritize = true;
       }
       else if (elements[z].priority) {
-        
+
         element_prioritize = row[z]
         priority_button[z].style.backgroundColor = "white";
         row[elements.length - 1].after(element_prioritize);
