@@ -13,6 +13,7 @@ window.onload = function() {
   document.getElementById("table").onmouseover = startup;
 }
 //Creates the item after the user inputs a task. Using an array makes this easier to understand and organize
+//This is also makes sure every task has the same style
 const create_item = function() {
   let input = document.getElementById("input_item").value;
   if (input === "") {
@@ -64,6 +65,8 @@ const create_item = function() {
     }
     document.getElementById("input_item").value = "";
 };
+
+
 //This function removes a task which is done by reacting to if the remove button is clicked or not
 const remove_item = function() {
   var removed = false;
@@ -80,6 +83,7 @@ const remove_item = function() {
   }
 }
 //This checks off items that are completed. I did this by using a variable to decide if it was true or false. This also changed the background.
+
 const finish_item = function() {
 
   var finish = false;
