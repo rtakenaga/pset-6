@@ -32,12 +32,14 @@
   font-family: 'Indie Flower', cursive;
   font-size: 25px;
 }
+
 .button_add {
   border-radius: 25px;
   width: 60px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
+
 /*Aligns the array elements and styles them */
 table {
     margin-bottom: auto;
@@ -49,6 +51,7 @@ table {
     background-color: white;
     font-family: 'Indie Flower', cursive;
 }
+
 .to_do {
   font-family: 'Indie Flower', cursive;
   text-align: center;
@@ -56,6 +59,7 @@ table {
   background-color: white;
   font-size: 25px;
 }
+
 /*Other formatting*/
 .to_do:hover {
   background-color: lightgrey;
