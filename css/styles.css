@@ -64,16 +64,19 @@ table {
 .to_do:hover {
   background-color: lightgrey;
 }
+
 .row {
     margin-top: 20px;
     height: 40px;
 }
+
 .priority_button {
     width: 40px;
     text-align: center;
     background-color: white;
     border: 2px solid;
 }
+/*Changes the color of the original button*/
 .priority_button:hover {
     background-color: #FEFE01;
 }
