@@ -91,7 +91,7 @@ const finish_item = function() {
   for (let x = 0; x < complete_button.length; x++) {
     complete_button[x].onclick = function() {
        if (elements[x].complete == false) {
-
+        //Adds the line and color
          finish = true;
          list_item[x].style.setProperty("text-decoration", "line-through");
          list_item[x].style.backgroundColor = "#baff66";
